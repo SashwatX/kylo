@@ -15,6 +15,28 @@ interface Product {
 
 const products: Product[] = [
   {
+    id: 3,
+    name: "KYLO PETAL BLOOM TEE",
+    price: "Rs 1499",
+    images: [
+      "/tshirt_photo/rosewhite.jpeg",
+      "/tshirt_photo/rose.jpeg",
+    ],
+    labels: ["WHITE", "WHITE"],
+    tag: "LIMITED",
+  },
+  {
+    id: 4,
+    name: "KYLO SOLSTICE BLOOM TEE",
+    price: "Rs 1499",
+    images: [
+      "/tshirt_photo/sunflowerwhite.jpeg",
+      "/tshirt_photo/sunflower.jpeg",
+    ],
+    labels: ["WHITE", "WHITE"],
+    tag: "NEW DROP",
+  },
+  {
     id: 1,
     name: "KYLO RONIN TEE - BLACK",
     price: "Rs 1299",
@@ -36,28 +58,6 @@ const products: Product[] = [
       "/tshirt_photo/white.png",
     ],
     labels: ["BACK", "FRONT", "TSHIRT"],
-    tag: "NEW DROP",
-  },
-  {
-    id: 3,
-    name: "KYLO PETAL BLOOM TEE",
-    price: "Rs 1499",
-    images: [
-      "/tshirt_photo/rosewhite.jpeg",
-      "/tshirt_photo/rose.jpeg",
-    ],
-    labels: ["WHITE", "WHITE"],
-    tag: "LIMITED",
-  },
-  {
-    id: 4,
-    name: "KYLO SOLSTICE BLOOM TEE",
-    price: "Rs 1499",
-    images: [
-      "/tshirt_photo/sunflowerwhite.jpeg",
-      "/tshirt_photo/sunflower.jpeg",
-    ],
-    labels: ["WHITE", "WHITE"],
     tag: "NEW DROP",
   },
 ];
