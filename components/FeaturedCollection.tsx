@@ -38,6 +38,28 @@ const products: Product[] = [
     labels: ["BACK", "FRONT", "TSHIRT"],
     tag: "NEW DROP",
   },
+  {
+    id: 3,
+    name: "KYLO PETAL BLOOM TEE",
+    price: "Rs 1499",
+    images: [
+      "/tshirt_photo/rosewhite.jpeg",
+      "/tshirt_photo/rose.jpeg",
+    ],
+    labels: ["WHITE", "WHITE"],
+    tag: "LIMITED",
+  },
+  {
+    id: 4,
+    name: "KYLO SOLSTICE BLOOM TEE",
+    price: "Rs 1499",
+    images: [
+      "/tshirt_photo/sunflowerwhite.jpeg",
+      "/tshirt_photo/sunflower.jpeg",
+    ],
+    labels: ["WHITE", "WHITE"],
+    tag: "NEW DROP",
+  },
 ];
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
@@ -192,14 +214,14 @@ export default function FeaturedCollection() {
             className="text-sm text-black/40 max-w-xs leading-relaxed"
             style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
           >
-            Two pieces. Zero compromises. Built for those who move in silence.
+            Four pieces. Zero compromises. Built for those who move in silence.
           </p>
         </div>
         <div className="mt-6 h-px bg-black/10" />
       </div>
 
       {/* Product grid */}
-      <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-12">
         {products.map((product, i) => (
           <ProductCard key={product.id} product={product} index={i} />
         ))}
